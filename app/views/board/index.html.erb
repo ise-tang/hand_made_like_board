@@ -1,0 +1,9 @@
+<h1>Board#index</h1>
+<p>Find me in app/views/board/index.html.erb</p>
+
+<%= form_tag('board/write', :method => :post) do %>
+  <%= text_field_tag 'line[0]', nil, :placeholder => "一行目" %>
+  <%= text_field_tag 'line[1]', nil, :placeholder => "二行目" %>
+  <%= text_field_tag 'line[2]', nil, :placeholder => "三行目" %>
+  <%= submit_tag '作成' %>
+<% end %>
